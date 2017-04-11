@@ -24,8 +24,22 @@
   color: #fff;
 }
 
+.button-red {
+    background: #ff0007;
+    color: #ffffff;
+}
 .button-small {
   font-size: 15px;
   line-height: 15px;
   padding: 7px 15px;
+}
+
+.delete-button {
+    float:right;
+    display: inline;
+}
+
+.inline {
+    display: inline;
+    float: left
 }

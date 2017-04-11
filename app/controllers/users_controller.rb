@@ -57,6 +57,12 @@ class UsersController < ApplicationController
     @new_question = @user.questions.build
   end
 
+  def destroy
+    @user.destroy
+    redirect_to root_path, notice: 'Юзер удален, пока-пока!'
+  end
+
+
   private
 
   # если загруженный из базы юзер и текущий залогиненный не совпадают - посылаем его
