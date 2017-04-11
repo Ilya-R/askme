@@ -14,9 +14,16 @@
       <%= question.text %>
     </div>
 
-    <div class="question-text">
-      Вопрос задан: <%= link_to "@#{User.find(question.questioning_user).username}", user_path(question.questioning_user), class: 'text-user-link' if question.questioning_user %>
-    </div>
+    <% if question.questioning_user %>
+        <div class="question-text">
+          Вопрос
+          задан: <%= link_to "@#{User.find(question.questioning_user).username}", user_path(question.questioning_user), class: 'text-user-link' %>
+        </div>
+    <% else %>
+        <div class="question-text">
+          Вопрос задан инкогнито
+        </div>
+    <% end %>
 
     <!-- Если вопрос имеет ответ, показать его -->
     <% if question.answer.present? %>
