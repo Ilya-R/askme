@@ -19,4 +19,8 @@ module ApplicationHelper
   def fa_icon(icon_class)
     content_tag 'span', '', class: "fa fa-#{icon_class}"
   end
+
+  def user_tabcolor
+      'background: #e8f200' if @user.tabcolor == 'yellow'
+  end
 end

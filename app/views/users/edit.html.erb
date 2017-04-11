@@ -31,6 +31,14 @@
         <%= f.text_field :avatar_url, class: 'form-text-field' %>
       </div>
 
+        <div class="form-field">
+          <%= f.label 'Выберите цвет блока с вашей аватаркой', class: 'form-label' %>
+          <%= f.radio_button(:tabcolor, 'darkgreen') %>
+          <%= f.label(:tabcolor, 'darkgreen') %>
+          <%= f.radio_button(:tabcolor, 'yellow') %>
+          <%= f.label(:tabcolor, 'yellow') %>
+        </div>
+
       <div class="buffer-top-large buffer-bottom">
         Если не хотите менять пароль — оставьте эти поля пустыми!
       </div>
