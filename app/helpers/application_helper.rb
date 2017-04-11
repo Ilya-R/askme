@@ -20,6 +20,10 @@ module ApplicationHelper
     content_tag 'span', '', class: "fa fa-#{icon_class}"
   end
 
+  def user_id_from_question(question)
+    User.find(question.questioning_user).username if question.questioning_user
+  end
+
   def user_tabcolor
     if @user.tabcolor == 'yellow'
       'background: #e8f200'

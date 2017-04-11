@@ -21,6 +21,8 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
 
+    @question.questioning_user = current_user if current_user.present?
+
     if @question.save
       redirect_to user_path(@question.user), notice: 'Вопрос задан'
     else

@@ -43,3 +43,7 @@ a {
 .text-center {
   text-align: center;
 }
+
+.text-user-link {
+    color: #011ca7;
+}
