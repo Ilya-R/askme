@@ -25,9 +25,10 @@ module ApplicationHelper
   end
 
   def user_tabcolor
-    if @user.tabcolor == 'yellow'
+    case @user.tabcolor
+    when 'yellow'
       'background: #e8f200'
-    elsif @user.tabcolor == 'pink'
+    when 'pink'
       'background: #FF08E7'
     end
   end

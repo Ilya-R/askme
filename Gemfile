@@ -9,9 +9,9 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 
-gem 'uglifier'
+gem 'rails_12factor'
 
-# Use jquery as the JavaScript library
+gem 'uglifier'
 gem 'jquery-rails'
 
 group :production do
