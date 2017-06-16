@@ -1,5 +1,3 @@
-# (c) goodprogrammer.ru
-
 # Миграция, созданная rails генератором
 # rails g migration AddUserToQuestion user:references
 class AddUserToQuestion < ActiveRecord::Migration

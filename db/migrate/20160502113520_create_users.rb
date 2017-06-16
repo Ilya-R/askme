@@ -1,5 +1,3 @@
-# (c) goodprogrammer.ru
-
 # Миграция, создающая сущность (таблицу) пользователя в базе.
 class CreateUsers < ActiveRecord::Migration
   def change

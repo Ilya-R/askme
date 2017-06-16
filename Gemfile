@@ -1,9 +1,3 @@
-# (с) goodprogrammer.ru
-#
-# файл, сгенерированный рельсами при создании нового приложения
-# удалены все лишние гемы, будем добавлять вручную по мере необходимости
-#
-
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -1,5 +1,3 @@
-# (c) goodprogrammer.ru
-
 # Миграция, создающая сущность (таблицу) вопроса в базе.
 class CreateQuestions < ActiveRecord::Migration
   def change

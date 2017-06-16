@@ -1,10 +1,3 @@
-# (c) goodprogrammer.ru
-#
-# Контроллер, управляющий вопросами
-# 1. Редактирует вопрос
-# 2. Создает вопрос
-# 3. Удаляет вопрос
-#
 class QuestionsController < ApplicationController
 
   # инициализируем объект вопрос для экшенов кроме :edit, :update, :destroy

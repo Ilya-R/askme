@@ -1,5 +1,3 @@
-# (c) goodprogrammer.ru
-
 # Миграция, созданная rails генератором
 # rails g migration AddEmailPasswordToUser email:string password_hash:string password_salt:string
 class AddEmailPasswordToUser < ActiveRecord::Migration
